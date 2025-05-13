@@ -9,14 +9,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
 }
 .card-image {
     border-radius: 20px;
 }
 .card {
     height: fit-content;
-    width: 384px;
+    width:100%;
+    max-width: 384px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -25,7 +26,6 @@ body {
     gap: 24px;
     border: #111111 3px solid;
     box-shadow: 8px 8px 0px rgb(0, 0, 0);
-    margin: 24px;
 }
 .card-content {
     display: flex;
@@ -75,4 +75,23 @@ body {
 .author {
     font-weight: bold;
     color: #111111;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
 }
